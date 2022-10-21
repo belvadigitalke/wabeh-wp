@@ -1,5 +1,4 @@
-jQuery(document).ready(function(){
-
+$(document).ready(function(){
     $(".slider").owlCarousel({
         autoplay:false,
         center: true,
@@ -87,4 +86,4 @@ jQuery(document).ready(function(){
         e.preventDefault();
     });
 
-})(jQuery);
+});

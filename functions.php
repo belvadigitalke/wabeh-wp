@@ -43,8 +43,8 @@ function blankslate_enqueue()
     wp_enqueue_style( 'wabeh-pluginscss', get_template_directory_uri() . '/css/plugins.css'); 
 
     wp_enqueue_script('jquery');
-    wp_enqueue_script( 'wabeh-plugins', get_template_directory_uri() . '/js/plugins.js', array());
-	wp_enqueue_script( 'wabeh-main', get_template_directory_uri() . '/js/main.js', array());
+    // wp_enqueue_script( 'wabeh-plugins', get_template_directory_uri() . '/js/plugins.js', array());
+	// wp_enqueue_script( 'wabeh-main', get_template_directory_uri() . '/js/main.js', array());
 }
 add_action('wp_footer', 'blankslate_footer');
 function blankslate_footer()

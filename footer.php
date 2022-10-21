@@ -62,5 +62,8 @@
         <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
 
     <?php wp_footer(); ?>
+    <script type="text/javascript" src="http://localhost/wabeh/wp-content/themes/blankslate/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="http://localhost/wabeh/wp-content/themes/blankslate/js/plugins.js"></script>
+    <script type="text/javascript" src="http://localhost/wabeh/wp-content/themes/blankslate/js/main.js"></script>
     </body>
 </html>

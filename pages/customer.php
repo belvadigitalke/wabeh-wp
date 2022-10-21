@@ -57,11 +57,15 @@ get_template_part('template-parts/header');
             <div class="table">
                 <div class="col left">
                     <div class="ttle-b">Why Wabeh</div>
-                    <div class="b-slide owl-carousel owl-theme">
-                        <div class="bind">
+                    <div class="b-slide owl-carousel owl-theme owl-loaded owl-drag">
+                        
+                        
+                        
+                        
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2750px, 0px, 0px); transition: all 0.25s ease 0s; width: 4400px;"><div class="owl-item cloned" style="width: 550px;"><div class="bind">
                             <div class="col left">
                                 <div class="icn">
-                                    <img src="http://localhost/wabeh/wp-content/uploads/2022/10/why-wabeh.png" width="164" height="251" alt="why-wabeh">
+                                    <img src="images/icns/why-wabeh.png" width="164" height="251" alt="why-wabeh">
                                 </div>
                             </div>
                             <div class="col right">
@@ -69,11 +73,10 @@ get_template_part('template-parts/header');
                                 <p>Choose from high-quality phones to fit your needs, from working,
                                     to keeping in touch with friends and family, to studying.</p>
                             </div>
-                        </div>
-                        <div class="bind">
+                        </div></div><div class="owl-item cloned" style="width: 550px;"><div class="bind">
                             <div class="col left">
                                 <div class="icn">
-                                    <img src="http://localhost/wabeh/wp-content/uploads/2022/10/why-wabeh.png" width="164" height="251" alt="why-wabeh">
+                                    <img src="images/icns/why-wabeh.png" width="164" height="251" alt="why-wabeh">
                                 </div>
                             </div>
                             <div class="col right">
@@ -81,11 +84,10 @@ get_template_part('template-parts/header');
                                 <p>Choose from high-quality phones to fit your needs, from working,
                                     to keeping in touch with friends and family, to studying.</p>
                             </div>
-                        </div>
-                        <div class="bind">
+                        </div></div><div class="owl-item" style="width: 550px;"><div class="bind">
                             <div class="col left">
                                 <div class="icn">
-                                    <img src="http://localhost/wabeh/wp-content/uploads/2022/10/why-wabeh.png" width="164" height="251" alt="why-wabeh">
+                                    <img src="images/icns/why-wabeh.png" width="164" height="251" alt="why-wabeh">
                                 </div>
                             </div>
                             <div class="col right">
@@ -93,11 +95,10 @@ get_template_part('template-parts/header');
                                 <p>Choose from high-quality phones to fit your needs, from working,
                                     to keeping in touch with friends and family, to studying.</p>
                             </div>
-                        </div>
-                        <div class="bind">
+                        </div></div><div class="owl-item" style="width: 550px;"><div class="bind">
                             <div class="col left">
                                 <div class="icn">
-                                    <img src="http://localhost/wabeh/wp-content/uploads/2022/10/why-wabeh.png" width="164" height="251" alt="why-wabeh">
+                                    <img src="images/icns/why-wabeh.png" width="164" height="251" alt="why-wabeh">
                                 </div>
                             </div>
                             <div class="col right">
@@ -105,12 +106,55 @@ get_template_part('template-parts/header');
                                 <p>Choose from high-quality phones to fit your needs, from working,
                                     to keeping in touch with friends and family, to studying.</p>
                             </div>
-                        </div>
-                    </div>
+                        </div></div><div class="owl-item" style="width: 550px;"><div class="bind">
+                            <div class="col left">
+                                <div class="icn">
+                                    <img src="images/icns/why-wabeh.png" width="164" height="251" alt="why-wabeh">
+                                </div>
+                            </div>
+                            <div class="col right">
+                                <div class="ttle-b large"> Phones to fit your needs</div>
+                                <p>Choose from high-quality phones to fit your needs, from working,
+                                    to keeping in touch with friends and family, to studying.</p>
+                            </div>
+                        </div></div><div class="owl-item active" style="width: 550px;"><div class="bind">
+                            <div class="col left">
+                                <div class="icn">
+                                    <img src="images/icns/why-wabeh.png" width="164" height="251" alt="why-wabeh">
+                                </div>
+                            </div>
+                            <div class="col right">
+                                <div class="ttle-b large"> Phones to fit your needs</div>
+                                <p>Choose from high-quality phones to fit your needs, from working,
+                                    to keeping in touch with friends and family, to studying.</p>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 550px;"><div class="bind">
+                            <div class="col left">
+                                <div class="icn">
+                                    <img src="images/icns/why-wabeh.png" width="164" height="251" alt="why-wabeh">
+                                </div>
+                            </div>
+                            <div class="col right">
+                                <div class="ttle-b large"> Phones to fit your needs</div>
+                                <p>Choose from high-quality phones to fit your needs, from working,
+                                    to keeping in touch with friends and family, to studying.</p>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 550px;"><div class="bind">
+                            <div class="col left">
+                                <div class="icn">
+                                    <img src="images/icns/why-wabeh.png" width="164" height="251" alt="why-wabeh">
+                                </div>
+                            </div>
+                            <div class="col right">
+                                <div class="ttle-b large"> Phones to fit your needs</div>
+                                <p>Choose from high-quality phones to fit your needs, from working,
+                                    to keeping in touch with friends and family, to studying.</p>
+                            </div>
+                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button></div></div>
 
                 </div>
                 <div class="col right">
-                    <img src="http://localhost/wabeh/wp-content/uploads/2022/10/why-wabeh.png" width="497" height="661" alt="why-wabeh">
+                    <img src="images/why-wabeh.png" width="497" height="661" alt="why-wabeh">
                 </div>
             </div>
         </div>
@@ -128,3 +172,4 @@ get_template_part('template-parts/header');
         </div>
 
     </section>
+<?php get_footer(); ?>
