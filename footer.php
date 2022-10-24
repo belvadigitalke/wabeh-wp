@@ -29,8 +29,8 @@
                     <h5 class="f-sub-heading">Business</h5>
                     <div class="links-wrap">
                         <ul style="display: block">
-                            <li><a href="#">Merchants</a></li>
-                            <li><a href="#">Customers</a></li>
+                            <li><a href="<?php echo home_url('/merchant'); ?>">Merchants</a></li>
+                            <li><a href="<?php echo home_url('/the-customer/'); ?>">Customers</a></li>
                                             </ul>
                     </div>
 
@@ -62,8 +62,8 @@
         <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
 
     <?php wp_footer(); ?>
-    <script type="text/javascript" src="http://localhost/wabeh/wp-content/themes/blankslate/js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="http://localhost/wabeh/wp-content/themes/blankslate/js/plugins.js"></script>
-    <script type="text/javascript" src="http://localhost/wabeh/wp-content/themes/blankslate/js/main.js"></script>
+    <script type="text/javascript" src="<?php echo home_url('/'); ?>/wp-content/themes/blankslate/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="<?php echo home_url('/'); ?>/wp-content/themes/blankslate/js/plugins.js"></script>
+    <script type="text/javascript" src="<?php echo home_url('/'); ?>/wp-content/themes/blankslate/js/main.js"></script>
     </body>
 </html>

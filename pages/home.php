@@ -164,7 +164,7 @@ get_template_part('template-parts/header');
                     <div class="table">
                         <div class="t-cell left">
                             <div class="pic-wrapper">
-                                <img src="http://localhost/wabeh/wp-content/uploads/2022/10/customer.png" width="296" height="296" alt="customer">
+                                <img src="<?php echo home_url('/'); ?>/wp-content/uploads/2022/10/customer.png" width="296" height="296" alt="customer">
                             </div>
                         </div>
                         <div class="t-cell right">
@@ -175,7 +175,7 @@ get_template_part('template-parts/header');
                                     easily get the phone
                                     you want with Wabeh
                                 </p>
-                                <a href="#" class="primary-btn">Learn More</a>
+                                <a href="<?php echo home_url('/the-customer/'); ?>" class="primary-btn">Learn More</a>
                             </div>
 
                         </div>
@@ -185,7 +185,7 @@ get_template_part('template-parts/header');
                     <div class="table">
                         <div class="t-cell left">
                             <div class="pic-wrapper">
-                                <img src="http://localhost/wabeh/wp-content/uploads/2022/10/customer.png" width="296" height="296" alt="customer">
+                                <img src="<?php echo home_url('/'); ?>/wp-content/uploads/2022/10/customer.png" width="296" height="296" alt="customer">
                             </div>
                         </div>
                         <div class="t-cell right r-hand">
@@ -196,7 +196,7 @@ get_template_part('template-parts/header');
                                     easily get the phone
                                     you want with Wabeh
                                 </p>
-                                <a href="#" class="primary-btn">Learn More</a>
+                                <a href="<?php echo home_url('/merchant'); ?>" class="primary-btn">Learn More</a>
                             </div>
 
                         </div>
