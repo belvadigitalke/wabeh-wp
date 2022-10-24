@@ -60,60 +60,38 @@ get_template_part('template-parts/header');
                         <h3 class="medium">Choose your phone of interest</h3>
                     </div>
                      <div class="slider owl-carousel">
+
+                     <?php
+                    $args = array(
+                        'post_type' => array('phoneofinterest'),
+                        'posts_per_page' => -1,
+                        'order' => 'DESC',
+                    );
+
+                $so_service = new WP_Query( $args );
+
+                if ( $so_service->have_posts() ) {
+                    while ( $so_service->have_posts() ) {
+                        $so_service->the_post();
+
+                        ?>
                         <div>
                             <div class="block">
-                                <img src="images/phones/phone-2.png" alt="" class="slder" />
+                                <img src="<?php echo the_post_thumbnail_url(); ?>" alt="" class="slder" />
                             </div>
                             <div class="p-cptn">
-                                <div class="p-name">Infinix Hot 10</div>
+                                <div class="p-name"><?php echo the_title(); ?></div>
                                 <a href="#" class="primary-btn">Buy Now</a>
                             </div>
                         </div>
-                        <div>
-                            <div class="block">
-                                <img src="images/phones/phone-1.png" alt="" class="slder" />
-                            </div>
-                            <div class="p-cptn">
-                                <div class="p-name">Infinix Hot 10</div>
-                                <a href="#" class="primary-btn">Buy Now</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="block">
-                                <img src="images/phones/phone-2.png" alt="" class="slder" />
-                            </div>
-                            <div class="p-cptn">
-                                <div class="p-name">Infinix Hot 10</div>
-                                <a href="#" class="primary-btn">Buy Now</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="block">
-                                <img src="images/phones/phone-2.png" alt="" class="slder" />
-                            </div>
-                            <div class="p-cptn">
-                                <div class="p-name">Infinix Hot 10</div>
-                                <a href="#" class="primary-btn">Buy Now</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="block">
-                                <img src="images/phones/phone-2.png" alt="" class="slder" />
-                            </div>
-                            <div class="p-cptn">
-                                <div class="p-name">Infinix Hot 10</div>
-                                <a href="#" class="primary-btn">Buy Now</a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="block">
-                                <img src="images/phones/phone-2.png" alt="" class="slder" />
-                            </div>
-                            <div class="p-cptn">
-                                <div class="p-name">Infinix Hot 10</div>
-                                <a href="#" class="primary-btn">Buy Now</a>
-                            </div>
-                        </div>
+                        <?php 
+                    }
+                } else {
+                    echo "NO DATA";
+                }
+                ?>
+		        <?php wp_reset_postdata()?>
+                      
 
 
                     </div>
@@ -127,11 +105,25 @@ get_template_part('template-parts/header');
         <div class="slider-bg"></div>
         <div class="wrapper">
             <ul class="profiles hme owl-carousel">
+            <?php
+                    $args = array(
+                        'post_type' => array('testimonial'),
+                        'posts_per_page' => -1,
+                        'order' => 'DESC',
+                    );
+
+                $so_servic = new WP_Query( $args );
+
+                if ( $so_servic->have_posts() ) {
+                    while ( $so_servic->have_posts() ) {
+                        $so_servic->the_post();
+
+                        ?>
                 <li>
                     <div class="col left">
                         <h3 class="medium">Testimonials</h3>
                             <span class="profile-pic">
-                            <img src="images/Testimonies/susan.png" width="504" height="455" alt="susan">
+                            <img src="<?php echo the_post_thumbnail_url(); ?>" width="504" height="455" alt="<?php echo the_title(); ?>">
                         </span>
                     </div>
                     <div class="col right">
@@ -141,61 +133,23 @@ get_template_part('template-parts/header');
                                 <span> here’s what our users have to say.</span>
                             </h1>
                             <div class="name">
-                                <h3 class="medium">Susan Mathai</h3>
-                                <div class="designation">CEO, Dubai Collections</div>
-                                <p>With Wabeh we are able to target all our customers. Right now we are making more and more
-                                    sales than we were doing before because the deposit is affordable and customers have time to pay for it.</p>
+                                <h3 class="medium"><?php echo the_title(); ?></h3>
+                                <div class="designation"><?php echo the_field('position'); ?></div>
+                                <p><?php echo the_content(); ?></p>
                             </div>
                         </div>
                     </div>
 
                 </li>
-                <li>
-                    <div class="col left">
-                        <h3 class="medium">Testimonials</h3>
-                        <span class="profile-pic">
-                            <img src="images/Testimonies/susan.png" width="504" height="455" alt="susan">
-                        </span>
-                    </div>
-                    <div class="col right">
-                        <div class="testimony-content">
-                            <h1 class="primary-heading">
-                                Don’t just take our word for it,
-                                <span> here’s what our users have to say.</span>
-                            </h1>
-                            <div class="name">
-                                <h3 class="medium">Susan Mathai</h3>
-                                <div class="designation">CEO, Dubai Collections</div>
-                                <p>With Wabeh we are able to target all our customers. Right now we are making more and more
-                                    sales than we were doing before because the deposit is affordable and customers have time to pay for it.</p>
-                            </div>
-                        </div>
-                    </div>
 
-                </li>
-                <li>
-                    <div class="col left">
-                        <h3 class="medium">Testimonials</h3>
-                        <span class="profile-pic">
-                            <img src="images/Testimonies/susan.png" width="504" height="455" alt="susan">
-                        </span>
-                    </div>
-                    <div class="col right">
-                        <div class="testimony-content">
-                            <h1 class="primary-heading">
-                                Don’t just take our word for it,
-                                <span> here’s what our users have to say.</span>
-                            </h1>
-                            <div class="name">
-                                <h3 class="medium">Susan Mathai</h3>
-                                <div class="designation">CEO, Dubai Collections</div>
-                                <p>With Wabeh we are able to target all our customers. Right now we are making more and more
-                                    sales than we were doing before because the deposit is affordable and customers have time to pay for it.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </li>
+                <?php 
+                    }
+                } else {
+                    echo "NO DATA";
+                }
+                ?>
+		        <?php wp_reset_postdata()?>
+                
             </ul>
 
         </div>
@@ -210,7 +164,7 @@ get_template_part('template-parts/header');
                     <div class="table">
                         <div class="t-cell left">
                             <div class="pic-wrapper">
-                                <img src="images/customer.png" width="296" height="296" alt="customer">
+                                <img src="http://localhost/wabeh/wp-content/uploads/2022/10/customer.png" width="296" height="296" alt="customer">
                             </div>
                         </div>
                         <div class="t-cell right">
@@ -231,7 +185,7 @@ get_template_part('template-parts/header');
                     <div class="table">
                         <div class="t-cell left">
                             <div class="pic-wrapper">
-                                <img src="images/customer.png" width="296" height="296" alt="customer">
+                                <img src="http://localhost/wabeh/wp-content/uploads/2022/10/customer.png" width="296" height="296" alt="customer">
                             </div>
                         </div>
                         <div class="t-cell right r-hand">

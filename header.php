@@ -13,14 +13,14 @@
              <div class="wrapper">
                   <div class="top-menu">
                        <div class="col left">
-                           <a href="#" class="logo"><img src="<?php echo home_url('/'); ?>/wp-content/uploads/2022/10/wabeh-logo.svg" width="304" height="112" alt="wabeh-logo"> </a>
+                           <a href="<?php echo home_url('/'); ?>" class="logo"><img src="<?php echo home_url('/'); ?>/wp-content/uploads/2022/10/wabeh-logo.svg" width="304" height="112" alt="wabeh-logo"> </a>
                        </div>
                        <div class="col middle">
                            <ul id="main_nav">
-                               <li class="active"><a href="#"><span>Home</span></a></li>
-                               <li><a href="#"><span>Customers</span></a></li>
-                               <li><a href="#"><span>Merchants</span></a></li>
-                               <li class="has-children">
+                               <li class="active"><a href="<?php echo home_url('/'); ?>"><span>Home</span></a></li>
+                               <li><a href="<?php echo home_url('/the-customer'); ?>"><span>Customers</span></a></li>
+                               <li><a href="<?php echo home_url('/merchant'); ?>"><span>Merchants</span></a></li>
+                               <!-- <li class="has-children">
                                    <a href="#"><span>How it works</span></a>
                                    <div class="sub-menu">
                                        <ul>
@@ -31,8 +31,8 @@
                                            <li><a href="#"><span>Marine Insurance</span></a></li>
                                        </ul>
                                    </div>
-                               </li>
-                               <li><a href="#"><span>FAQ's</span></a></li>
+                               </li> -->
+                               <li><a href="<?php echo home_url('/faqs'); ?>"><span>FAQ's</span></a></li>
                            </ul>
                        </div>
                       <div class="col right">

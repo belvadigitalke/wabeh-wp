@@ -26,7 +26,7 @@ get_template_part('template-parts/header');
                 </li>
                 <li>
                     <div class="icn">
-                        <img src="images/icns/conversion.png" width="" height="">
+                        <img src="<?php echo home_url('/'); ?>/wp-content/uploads/2022/10/conversion.png" width="" height="">
                     </div>
                     <div class="ttle-b">20-30%</div>
                     <span class="desc-b">Conversion rate improvement</span>
@@ -34,7 +34,7 @@ get_template_part('template-parts/header');
                 </li>
                 <li>
                     <div class="icn">
-                        <img src="images/icns/increase.png" width="" height="">
+                        <img src="<?php echo home_url('/'); ?>/wp-content/uploads/2022/10/increase.png" width="" height="">
                     </div>
                     <div class="ttle-b">30-150%</div>
                     <span class="desc-b">Increase in monthly sales</span>
@@ -42,7 +42,7 @@ get_template_part('template-parts/header');
                 </li>
                 <li>
                     <div class="icn">
-                        <img src="images/icns/new-customers.png" width="" height="">
+                        <img src="<?php echo home_url('/'); ?>/wp-content/uploads/2022/10/new-customers.png" width="" height="">
                     </div>
                     <div class="ttle-b">40-50%</div>
                     <span class="desc-b">Increase in new customers </span>
@@ -60,7 +60,7 @@ get_template_part('template-parts/header');
         <div class="wrapper">
             <div class="financing table">
                  <div class="col left">
-                     <img class="cycle" src="images/innovation-structure.png" width="515" height="456" alt="">
+                     <img class="cycle" src="<?php echo home_url('/'); ?>/wp-content/uploads/2022/10/innovation-structure-1-1.png" width="515" height="456" alt="">
                  </div>
                  <div class="col right">
                      <div class="ttle-b">An Innovative Financing Partner to Fit Your Business Needs</div>
@@ -73,7 +73,7 @@ get_template_part('template-parts/header');
                  </div>
             </div>
             <div class="users">
-                <img class="user" src="images/users.png" width="858" height="278" alt="">
+                <img class="user" src="<?php echo home_url('/'); ?>/wp-content/uploads/2022/10/users-1.png" width="858" height="278" alt="">
             </div>
             <div class="business">
                 <ul>
@@ -100,9 +100,30 @@ get_template_part('template-parts/header');
         <div class="wrapper">
             <div class="tbl">
                 <div class="col left">
-                    <a href="#" class="device"> <img src="images/devices/itel.png" width="164" height="251" alt="itel"> </a>
-                    <a href="#" class="device"> <img src="images/devices/infinix.png" width="164" height="251" alt="infinix"> </a>
-                    <a href="#" class="device"> <img src="images/devices/tecno.png" width="164" height="251" alt="tecno"> </a>
+                <?php
+                    $args = array(
+                        'post_type' => array('phoneofinterest'),
+                        'posts_per_page' => -1,
+                        'order' => 'DESC',
+                    );
+
+                $so_service = new WP_Query( $args );
+
+                if ( $so_service->have_posts() ) {
+                    while ( $so_service->have_posts() ) {
+                        $so_service->the_post();
+
+                        ?>
+
+                    <a href="<?php echo the_permalink(); ?>" class="device"> <img src="<?php echo the_post_thumbnail_url(); ?>" width="164" height="251" alt="<?php echo the_title(); ?>"> </a>
+                  
+                    <?php 
+                    }
+                } else {
+                    echo "NO DATA";
+                }
+                ?>
+		        <?php wp_reset_postdata()?>
 
                 </div>
                 <div class="col right">
@@ -124,82 +145,54 @@ get_template_part('template-parts/header');
         </div>
         <div class="wrapper">
             <ul class="profiles owl-carousel">
+            <?php
+                    $args = array(
+                        'post_type' => array('testimonial'),
+                        'posts_per_page' => -1,
+                        'order' => 'DESC',
+                    );
+
+                $so_servic = new WP_Query( $args );
+
+                if ( $so_servic->have_posts() ) {
+                    while ( $so_servic->have_posts() ) {
+                        $so_servic->the_post();
+
+                        ?>
                     <li>
                         <div class="col left">
                         <span class="profile-pic">
-						<img src="images/Testimonies/Benson.png" width="504" height="455" alt="susan">
-					</span>
+                            <img src="<?php echo the_post_thumbnail_url(); ?>" width="504" height="455" alt="<?php echo the_title(); ?>">
+                        </span>
                         </div>
                         <div class="col right">
                             <div class="testimony-content">
                                 <div class="name">
-                                    <h3 class="medium">Benson Mbugua</h3>
-                                    <div class="designation">Founder & CEO, Kings Communications </div>
-                                    <p>Since I partnered with Wabeh, I have seen more than 50% increase in sales.
-                                        Wabeh has been very helpful in growing my business.” OR “Wabeh offers
-                                        marketing support to create awareness about selling our phones with their
-                                        buy now, pay later offer. I am able to get as many customers as possible
-                                        because a lot of customers want to purchase products on credit, which
-                                        Wabeh provides.
+                                    <h3 class="medium"><?php echo the_title(); ?></h3>
+                                    <div class="designation"><?php echo the_field('position'); ?></div>
+                                    <p><?php echo the_content(); ?>
                                     </p>
                                 </div>
 
                             </div>
                         </div>
                     </li>
-                    <li>
-                    <div class="col left">
-                        <span class="profile-pic">
-						<img src="images/Testimonies/Benson.png" width="504" height="455" alt="susan">
-					</span>
-                    </div>
-                    <div class="col right">
-                        <div class="testimony-content">
-                            <div class="name">
-                                <h3 class="medium">Benson Mbugua</h3>
-                                <div class="designation">Founder & CEO, Kings Communications </div>
-                                <p>Since I partnered with Wabeh, I have seen more than 50% increase in sales.
-                                    Wabeh has been very helpful in growing my business.” OR “Wabeh offers
-                                    marketing support to create awareness about selling our phones with their
-                                    buy now, pay later offer. I am able to get as many customers as possible
-                                    because a lot of customers want to purchase products on credit, which
-                                    Wabeh provides.
-                                </p>
-                            </div>
 
-                        </div>
-                    </div>
-                </li>
-                    <li>
-                    <div class="col left">
-                        <span class="profile-pic">
-						<img src="images/Testimonies/Benson.png" width="504" height="455" alt="susan">
-					</span>
-                    </div>
-                    <div class="col right">
-                        <div class="testimony-content">
-                            <div class="name">
-                                <h3 class="medium">Benson Mbugua</h3>
-                                <div class="designation">Founder & CEO, Kings Communications </div>
-                                <p>Since I partnered with Wabeh, I have seen more than 50% increase in sales.
-                                    Wabeh has been very helpful in growing my business.” OR “Wabeh offers
-                                    marketing support to create awareness about selling our phones with their
-                                    buy now, pay later offer. I am able to get as many customers as possible
-                                    because a lot of customers want to purchase products on credit, which
-                                    Wabeh provides.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </li>
+                    <?php 
+                    }
+                } else {
+                    echo "NO DATA";
+                }
+                ?>
+		        <?php wp_reset_postdata()?>
+                   
              </ul>
         </div>
 
     </section>
     <!-- Boost-sales -->
     <section class="boost-sales padding-top-bottom">
-        <div id="boost" style="background-image:url(images/banners/boost-sale.jpg);">
+        <div id="boost" style="background-image:url(<?php echo home_url('/'); ?>/wp-content/uploads/2022/10/boost-sale-1.jpg);">
             <div class="wrapper s-tbl">
                 <div class="col left">
                     <div class="ttle-b">Boost your sales today</div>
