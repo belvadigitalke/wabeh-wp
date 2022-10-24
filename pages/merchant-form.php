@@ -78,59 +78,7 @@ get_template_part('template-parts/header');
                 </div>
                 <div class="col right">
 
-                    <form class="frmLead" action="#" method="post">
-                        <div class="fieldset">
-                            <div class="field">
-                                <div class="input-wrapper">
-                                    <input type="text" class="textbox" id="f-name" name="f-name" maxlength="50">
-                                    <label for="f-name" class="input-label">
-                                        <span class="label">Full Name</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fieldset">
-                            <div class="field">
-                                <div class="input-wrapper">
-                                    <input type="text" class="textbox" id="l-name" name="l-name" maxlength="50">
-                                    <label for="l-name" class="input-label">
-                                        <span class="label">Business Email</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fieldset">
-                            <div class="field">
-                                <div class="input-wrapper">
-                                    <input type="text" class="textbox" id="p-number" name="p-number" maxlength="50">
-                                    <label for="p-number" class="input-label">
-                                        <span class="label">Phone Number</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fieldset">
-                            <div class="field">
-                                <div class="input-wrapper">
-                                    <input type="text" class="textbox" id="b-name" name="b-name" maxlength="50">
-                                    <label for="b-name" class="input-label">
-                                        <span class="label">Business Name</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fieldset">
-                            <div class="field">
-                                <div class="input-wrapper">
-                                    <input type="text" class="textbox" id="shop" name="shop" maxlength="50">
-                                    <label for="shop" class="input-label">
-                                        <span class="label">No of retail shops</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#" class="primary-btn">Get in touch</a>
-                    </form>
+                  <!-- //form goes here -->
 
                 </div>
             </div>
